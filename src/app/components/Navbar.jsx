@@ -9,9 +9,9 @@ const Navbar = () => {
     setIsClicked(!isClicked);
   };
   return (
-    <nav className="bg-green-300 pb-2">
-      <div className="max-w-7xl bg-red-300 mx-auto  px-2 sm:px-8 lg:px-18">
-        <div className="flex bg-purple-300  md:w-10/12 h-16 mx-auto items-center justify-between">
+    <nav className="pb-2">
+      <div className=" ">
+        <div className="flex items-center justify-between">
           <div className="flex-shrink-0">
             <Link href="/">
               <Image
@@ -25,7 +25,7 @@ const Navbar = () => {
           </div>
           {/* Medium and Up devices */}
           <div className="hidden sm:block">
-            <div className="ml-4 flex items-center space-x-4">
+            <div className="mr-3 flex items-center space-x-4">
               <Link
                 className="text-slate-900 hover:bg-gray-700 hover:text-white
                       rounded-md px-3 py-2 text-sm font-medium"

@@ -8,8 +8,7 @@ import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
+    <div className="sm:w-11/12 mx-auto">
       <Hero />
       <Marquee />
       <Services />
