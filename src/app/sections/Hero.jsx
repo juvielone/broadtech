@@ -4,11 +4,11 @@ import Navbar from "../components/Navbar";
 const Hero = () => {
   return (
     <>
-      <div className=" md:min-h-screen relative">
+      <div className="relative">
         <Navbar />
         {/* hidden md:block  */}
-        <div className="relative pb-10 h-fit">
-          <div className="bg-red-300">
+        <div className=" relative pb-10 h-fit">
+          <div className="mt-4">
             <Image
               src="/assets/images/hero-tower.png"
               alt="Hero Background"

@@ -16,7 +16,7 @@ const MarqueeBrand = () => {
     "anglican",
   ];
   return (
-    <div className="mt-20 w-5/6 mx-auto md:w-full">
+    <div className="mt-20 w-5/6 mx-auto md:mt-0 md:py-32 md:w-full">
       <h1 className="text-center font-bold text-2xl ">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,{" "}
       </h1>

@@ -3,14 +3,14 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <div className="p-11 mt-20">
+    <div className="px-11 mt-28 md:mt-10">
       {/* Content */}
       <div>
         <h1 className="font-bold text-2xl ">Lorem ipsum dolor sit amet</h1>
       </div>
 
       {/* Card Services */}
-      <div className="mt-20 grid grid-cols-1 gap-y-4  sm:grid-cols-2 sm:gap-x-2 md:grid-cols-4 md:gap-4 md:gap-y-0">
+      <div className="mt-20 grid grid-cols-1 gap-y-4  sm:grid-cols-2 sm:gap-x-2 lg:grid-cols-4 lg:gap-4 lg:gap-y-0">
         <div className="border-2 border-[#C9C6C6] rounded-md shadow-md">
           <div className="flex">
             <span>
