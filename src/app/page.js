@@ -6,12 +6,14 @@ import Footer from "./sections/Footer";
 
 export default function Home() {
   return (
-    <div className="sm:w-11/12 mx-auto">
-      <Hero />
-      <MarqueeBrand />
-      <Services />
-      <About />
-      <Footer />
+    <div>
+      <div className="sm:w-11/12 mx-auto">
+        <Hero />
+        <MarqueeBrand />
+        <Services />
+        <About />
+      </div>
+      <Footer className="w-full" />
     </div>
   );
 }
