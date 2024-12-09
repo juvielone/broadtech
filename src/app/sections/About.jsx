@@ -1,24 +1,48 @@
+"use client";
+import { motion } from "framer-motion";
 import Carousel from "../components/Carousel";
 import Image from "next/image";
 const About = () => {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { duration: 0.8, staggerChildren: 0.1, delayChildren: 0.3 },
+    },
+  };
+  const contentVariant = {
+    hidden: { opacity: 0, y: -90, top: 100 },
+    show: { opacity: 1, y: 0, top: 30, transition: { duration: 0.4 } },
+  };
   return (
-    <div className="my-20 py-10 grid grid-cols-1 md:grid-cols-2 gap-3">
-      <div className="w-10/12  mx-auto">
+    <motion.div
+      variants={container}
+      initial="hidden"
+      whileInView="show"
+      className="my-20 py-10 grid grid-cols-1 md:grid-cols-2 gap-3"
+    >
+      <motion.div className="w-10/12  mx-auto">
         <Carousel />
-      </div>
-      <div>
-        <h1 className="w-fit mx-auto py-3 font-bold text-2xl  md:mx-0">
+      </motion.div>
+      <motion.div>
+        <motion.h1
+          variants={contentVariant}
+          className="w-fit mx-auto py-3 font-bold text-2xl  md:mx-0"
+        >
           Lorem ipsum dolor sit amet
-        </h1>
-        <p className="py-5 w-96 mx-auto text-center md:mt-5 md:w-auto md:text-left">
+        </motion.h1>
+        <motion.p
+          variants={contentVariant}
+          className="py-5 w-96 mx-auto text-center md:mt-5 md:w-auto md:text-left"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis"Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqvua. Ut enim ad minim veniam, quis
-        </p>
-        <div className="flex w-fit mx-auto md:mx-0 md:mt-10">
-          <div className="px-3 font-medium">See More</div>
+        </motion.p>
+        <motion.div className="flex w-fit mx-auto md:mx-0 md:mt-10">
+          <motion.div className="px-3 font-medium">See More</motion.div>
           <Image
             src="/assets/service-icons/link.svg"
             className="w-5"
@@ -26,9 +50,9 @@ const About = () => {
             height={350}
             alt="brands"
           />
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 
