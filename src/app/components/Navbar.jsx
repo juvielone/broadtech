@@ -1,18 +1,43 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 const Navbar = () => {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { duration: 0.8 },
+    },
+  };
+  const contentVariant = {
+    hidden: { opacity: 0, y: -30, top: 100 },
+    show: { opacity: 1, y: 0, top: 30, transition: { duration: 0.4 } },
+  };
+
+  const links = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/services", label: "Services" },
+    { href: "/contact", label: "Contact" },
+  ];
   const [isClicked, setIsClicked] = useState(false);
   const toggleNav = () => {
     setIsClicked(!isClicked);
   };
   return (
-    <nav className="pb-2">
-      <div className=" ">
-        <div className="flex items-center justify-between">
-          <div className="flex-shrink-0">
+    <motion.nav
+      variants={container}
+      initial="hidden"
+      whileInView="show"
+      className="pb-2"
+    >
+      <motion.div className=" ">
+        <motion.div className="flex items-center justify-between">
+          {/* Logo */}
+          <motion.div className="flex-shrink-0">
             <Link href="/">
               <Image
                 src="/assets/images/logo.svg"
@@ -22,36 +47,26 @@ const Navbar = () => {
                 alt="Logo"
               />
             </Link>
-          </div>
+          </motion.div>
           {/* Medium and Up devices */}
-          <div className="hidden sm:block">
-            <div className="mr-3 flex items-center space-x-4">
-              <Link
-                className="text-slate-900 hover:bg-gray-700 hover:text-white
-                      rounded-md px-3 py-2 text-sm font-medium"
-                href="/"
-              >
-                Dashboard
-              </Link>
-              <Link
-                className="text-slate-900 hover:bg-gray-700 hover:text-white
-                      rounded-md px-3 py-2 text-sm font-medium"
-                href="/"
-              >
-                About
-              </Link>
-              <Link
-                className="text-slate-900 hover:bg-gray-700 hover:text-white
-                      rounded-md px-3 py-2 text-sm font-medium"
-                href="/"
-              >
-                Contact Us
-              </Link>
-            </div>
-          </div>
+          <motion.div className="hidden sm:block">
+            <motion.div className="mr-3 flex items-center space-x-4">
+              {links.map((link, index) => (
+                <motion.div key={index} variants={contentVariant}>
+                  <Link
+                    href={link.href}
+                    className="text-slate-900 hover:bg-gray-700 hover:text-white
+                  rounded-md px-3 py-2 text-sm font-medium"
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
+              ))}
+            </motion.div>
+          </motion.div>
 
           {/* Mobile */}
-          <div className="sm:hidden flex items-center">
+          <motion.div className="sm:hidden flex items-center">
             <button
               onClick={toggleNav}
               className="mr-2 inline-flex items-center justify-center p-2 rounded-md
@@ -90,34 +105,26 @@ const Navbar = () => {
                 </svg>
               )}
             </button>
-          </div>
-        </div>
-      </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
       {isClicked && (
-        <div className="sm:hidden min-w-max">
-          <div className="mx-auto pt-2 pb-3 space-y-1">
-            <Link
-              href="/"
-              className="block p-2 text-black hover:bg-slate-600 hover:text-white rounded-lg"
-            >
-              Home
-            </Link>
-            <Link
-              href="/"
-              className="block p-2 text-black hover:bg-slate-600 hover:text-white rounded-lg"
-            >
-              About
-            </Link>
-            <Link
-              href="/"
-              className="block p-2 text-black hover:bg-slate-600 hover:text-white rounded-lg"
-            >
-              Contact
-            </Link>
-          </div>
-        </div>
+        <motion.div className="sm:hidden min-w-max">
+          <motion.div className="mx-auto pt-2 pb-3 space-y-1">
+            {links.map((link, index) => (
+              <Link
+                key={index}
+                href={link.href}
+                className="block p-2 text-black hover:bg-slate-600
+                   hover:text-white rounded-lg"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </motion.div>
+        </motion.div>
       )}
-    </nav>
+    </motion.nav>
   );
 };
 
