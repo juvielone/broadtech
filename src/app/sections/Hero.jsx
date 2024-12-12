@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 
@@ -64,6 +65,7 @@ const Hero = () => {
               </motion.p>
               {/* Buttons */}
               <motion.div className="mt-14 w-fit flex mx-auto md:mt-20 md:mx-0">
+                {/* Services */}
                 <motion.button
                   variants={btnVariant}
                   whileHover={{ scale: 1.1 }}
@@ -90,24 +92,27 @@ const Hero = () => {
                     </svg>
                   </span>
                 </motion.button>
-                <motion.button
-                  variants={btnVariant}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex items-center bg-gray-700 text-slate-50 rounded w-40 h-12 ml-5"
-                >
-                  <span className="ml-3 font-medium">Contact Us</span>
-                  <span className="text-slate-50 w-fit">
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 26 25"
-                      className="ml-3 fill-current"
-                    >
-                      <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z" />
-                    </svg>
-                  </span>
-                </motion.button>
+                {/* Contact */}
+                <Link href="/contact">
+                  <motion.button
+                    variants={btnVariant}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="flex items-center bg-gray-700 text-slate-50 rounded w-40 h-12 ml-5"
+                  >
+                    <span className="ml-3 font-medium">Contact Us</span>
+                    <span className="text-slate-50 w-fit">
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 26 25"
+                        className="ml-3 fill-current"
+                      >
+                        <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z" />
+                      </svg>
+                    </span>
+                  </motion.button>
+                </Link>
               </motion.div>
             </motion.div>
 

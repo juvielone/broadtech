@@ -19,9 +19,9 @@ const Navbar = () => {
 
   const links = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/services", label: "Services" },
+    { href: "/service", label: "Services" },
     { href: "/contact", label: "Contact" },
+    { href: "/about", label: "About" },
   ];
   const [isClicked, setIsClicked] = useState(false);
   const toggleNav = () => {
