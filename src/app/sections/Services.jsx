@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const Services = () => {
   const container = {
@@ -35,6 +36,7 @@ const Services = () => {
 
       {/* Card Services */}
       <motion.div className="mt-20 grid grid-cols-1 gap-y-4  sm:grid-cols-2 sm:gap-x-2 lg:grid-cols-4 lg:gap-4 lg:gap-y-0">
+        {/* Wireband Card */}
         <motion.div
           variants={cardVariant}
           whileHover={{ scale: 1.1, y: -30 }}
@@ -59,20 +61,22 @@ const Services = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna
           </p>
-          <motion.div className="flex pb-3">
-            <motion.div className="px-3 font-medium">See More</motion.div>
-            <motion.div className="">
-              <Image
-                src="/assets/service-icons/link.svg"
-                className="w-5"
-                width={350}
-                height={350}
-                alt="brands"
-              />
-            </motion.div>
-          </motion.div>
+          <Link href="/service#wireband">
+            <motion.button className="flex pb-3">
+              <motion.div className="px-3 font-medium">See More</motion.div>
+              <motion.div>
+                <Image
+                  src="/assets/service-icons/link.svg"
+                  className="w-5"
+                  width={350}
+                  height={350}
+                  alt="brands"
+                />
+              </motion.div>
+            </motion.button>
+          </Link>
         </motion.div>
-
+        {/* It Infas Card */}
         <motion.div
           variants={cardVariant}
           whileHover={{ scale: 1.1, y: -30 }}
@@ -97,20 +101,22 @@ const Services = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna
           </p>
-          <motion.div className="flex pb-3">
-            <motion.div className="px-3 font-medium">See More</motion.div>
-            <motion.div className="">
-              <Image
-                src="/assets/service-icons/link.svg"
-                className="w-5"
-                width={350}
-                height={350}
-                alt="brands"
-              />
-            </motion.div>
-          </motion.div>
+          <Link href="/service#it-infas">
+            <motion.button className="flex pb-3">
+              <motion.div className="px-3 font-medium">See More</motion.div>
+              <motion.div>
+                <Image
+                  src="/assets/service-icons/link.svg"
+                  className="w-5"
+                  width={350}
+                  height={350}
+                  alt="brands"
+                />
+              </motion.div>
+            </motion.button>
+          </Link>
         </motion.div>
-
+        {/* Copper and Fibre Install Card */}
         <motion.div
           variants={cardVariant}
           whileHover={{ scale: 1.1, y: -30 }}
@@ -135,20 +141,22 @@ const Services = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna
           </p>
-          <motion.div className="flex pb-3">
-            <motion.div className="px-3 font-medium">See More</motion.div>
-            <motion.div className="">
-              <Image
-                src="/assets/service-icons/link.svg"
-                className="w-5"
-                width={350}
-                height={350}
-                alt="brands"
-              />
-            </motion.div>
-          </motion.div>
+          <Link href="/service#copper">
+            <motion.button className="flex pb-3">
+              <motion.div className="px-3 font-medium">See More</motion.div>
+              <motion.div>
+                <Image
+                  src="/assets/service-icons/link.svg"
+                  className="w-5"
+                  width={350}
+                  height={350}
+                  alt="brands"
+                />
+              </motion.div>
+            </motion.button>
+          </Link>
         </motion.div>
-
+        {/* Carrier Card */}
         <motion.div
           variants={cardVariant}
           whileHover={{ scale: 1.1 }}
@@ -173,18 +181,20 @@ const Services = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna
           </p>
-          <motion.div className="flex pb-3">
-            <motion.div className="px-3 font-medium">See More</motion.div>
-            <motion.div className="">
-              <Image
-                src="/assets/service-icons/link.svg"
-                className="w-5"
-                width={350}
-                height={350}
-                alt="brands"
-              />
-            </motion.div>
-          </motion.div>
+          <Link href="/service#carrier">
+            <motion.button className="flex pb-3">
+              <motion.div className="px-3 font-medium">See More</motion.div>
+              <motion.div>
+                <Image
+                  src="/assets/service-icons/link.svg"
+                  className="w-5"
+                  width={350}
+                  height={350}
+                  alt="brands"
+                />
+              </motion.div>
+            </motion.button>
+          </Link>
         </motion.div>
       </motion.div>
     </motion.div>
