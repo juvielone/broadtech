@@ -11,73 +11,15 @@ import Footer from "../sections/Footer";
 const About = () => {
   return (
     <>
-      <div className="sm:w-11/12 mx-auto pb-10">
+      <div className="sm:w-11/12 mx-auto ">
         <Navbar />
-        <h1 className="md:text-2xl w-11/12 font-bold mt-10  text-center mx-auto">
-          Broadtech Business Solutions is an emerging trusted and outstanding
-          partner of major carriers and providers in the Telecommunications and
-          Communications industry.
-        </h1>
-        <div className="h-fit mt-10 ">
-          <Swiper
-            slidesPerView={1} // Set a fractional value to show portions of adjacent slides
-            centeredSlides={true} // Ensure the active slide is centered
-            spaceBetween={10} // Adjust spacing between slides
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper"
-          >
-            {/* it-infas */}
-            <SwiperSlide className="w-fit">
-              <Image
-                src="/assets/services/it-infas.jpg"
-                className=" rounded-lg h-80 mx-auto w-5/6 md:md:w-fit"
-                width={470}
-                height={350}
-                alt="brands"
-              />
-            </SwiperSlide>
 
-            {/* wireband */}
-            <SwiperSlide className="">
-              <Image
-                src="/assets/services/wireband.jpg"
-                className="rounded-lg mx-auto h-80  w-5/6  md:w-fit"
-                width={470}
-                height={250}
-                alt="brands"
-              />
-            </SwiperSlide>
-
-            {/* 5g phone */}
-            <SwiperSlide>
-              <Image
-                src="/assets/services/carrier.jpg"
-                className="rounded-lg mx-auto  md:h-80  w-5/6 md:w-fit"
-                width={470}
-                height={350}
-                alt="brands"
-              />
-            </SwiperSlide>
-
-            {/* copper */}
-            <SwiperSlide>
-              <Image
-                src="/assets/services/copper.jpg"
-                className="rounded-lg mx-auto h-80   w-5/6 md:w-fit"
-                width={470}
-                height={350}
-                alt="brands"
-              />
-            </SwiperSlide>
-          </Swiper>
-        </div>
-
-        <div className="mt-20 sm:grid grid-cols-1 md:grid-cols-2">
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2">
           <div>
-            <p className="w-11/12 mx-auto pb-5">
+            <h1 className="md:text-2xl w-11/12 font-bold  text-left mx-auto">
+              Trusted and Outstanding Partner of Major Carriers And Providers
+            </h1>
+            <p className="w-11/12 mx-auto  mt-5">
               Established by professionals with more than 25 years of solid
               experience and in-depth knowledge in the provisioning,
               commissioning and maintenance of telecommunications services using
@@ -95,8 +37,8 @@ const About = () => {
           </div>
           <div>
             <Image
-              src="/assets/services/server.jpg"
-              className=" rounded-lg h-80 mx-auto mt-10 w-5/6 md:mt-0 md:w-fit"
+              src="/assets/images/about-tower.jpg"
+              className=" rounded-lg mx-auto mt-12 w-64 md:w-80 md:mt-0 lg:mt-0 lg:h-5/6 lg:w-3/4"
               width={470}
               height={350}
               alt="brands"
