@@ -25,12 +25,15 @@ const Services = () => {
       variants={container}
       initial="hidden"
       whileInView="show"
-      className="px-11 mt-28 md:mt-10"
+      className="px-11 pb-10 mt-28 md:mt-10"
     >
       {/* Content */}
       <motion.div>
-        <motion.h1 variants={contentVariant} className="font-bold text-2xl">
-          Lorem sipsum dolor sit amet
+        <motion.h1
+          variants={contentVariant}
+          className="font-bold text-2xl sm:text-4xl"
+        >
+          <span className="text-[#29AAE3]">Broadtech Solutions</span> Services
         </motion.h1>
       </motion.div>
 
@@ -43,7 +46,7 @@ const Services = () => {
           whileTap={{ scale: 0.95 }}
           className="border-2 border-[#C9C6C6] rounded-md shadow-md"
         >
-          <motion.div className="flex">
+          <motion.div className="flex h-20">
             <span>
               <Image
                 src="/assets/service-icons/wideband.svg"
@@ -57,9 +60,9 @@ const Services = () => {
               Wide-band Services
             </h2>
           </motion.div>
-          <p className="px-3 py-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna
+          <p className="px-3 py-5 sm:h-44">
+            Installation and commissioning of Telstra Wideband Services using
+            traditional copper and fibre technologies.
           </p>
           <Link href="/service#wireband">
             <motion.button className="flex pb-3">
@@ -83,7 +86,7 @@ const Services = () => {
           whileTap={{ scale: 0.95 }}
           className="border-2 border-[#C9C6C6] rounded-md shadow-md"
         >
-          <motion.div className="flex">
+          <motion.div className="flex h-20">
             <span>
               <Image
                 src="/assets/service-icons/it-infas.svg"
@@ -97,24 +100,27 @@ const Services = () => {
               LAN and IT Infrastructure
             </h2>
           </motion.div>
-          <p className="px-3 py-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna
+          <p className="px-3 py-5 sm:h-44">
+            Design, install, commission and maintain LAN and IT related works
           </p>
-          <Link href="/service#it-infas">
-            <motion.button className="flex pb-3">
-              <motion.div className="px-3 font-medium">See More</motion.div>
-              <motion.div>
-                <Image
-                  src="/assets/service-icons/link.svg"
-                  className="w-5"
-                  width={350}
-                  height={350}
-                  alt="brands"
-                />
-              </motion.div>
-            </motion.button>
-          </Link>
+          <div>
+            <div className=" w-fit">
+              <Link href="/service#it-infas">
+                <motion.button className="flex pb-3">
+                  <motion.div className="px-3 font-medium">See More</motion.div>
+                  <motion.div>
+                    <Image
+                      src="/assets/service-icons/link.svg"
+                      className="w-5"
+                      width={350}
+                      height={350}
+                      alt="brands"
+                    />
+                  </motion.div>
+                </motion.button>
+              </Link>
+            </div>
+          </div>
         </motion.div>
         {/* Copper and Fibre Install Card */}
         <motion.div
@@ -123,23 +129,23 @@ const Services = () => {
           whileTap={{ scale: 0.95 }}
           className="border-2 border-[#C9C6C6] rounded-md shadow-md"
         >
-          <motion.div className="flex">
-            <span>
+          <motion.div className="flex h-20">
+            <span className="mt-2">
               <Image
                 src="/assets/service-icons/copper-fibre-install.svg"
-                className="w-auto m-2"
+                className="w-auto  h-16"
                 width={350}
-                height={350}
+                height={300}
                 alt="brands"
               />
             </span>
-            <h2 className="text-lg font-semibold mt-3  w-2/3">
+            <h2 className="text-lg font-semibold mt-3 w-2/3">
               Copper and Fibre Instal
             </h2>
           </motion.div>
-          <p className="px-3 py-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna
+          <p className="px-3 py-5 sm:h-44">
+            Broadtech Business Solutions has in-depth experience in end-to-end
+            copper and fibre network installation, testing and maintenance
           </p>
           <Link href="/service#copper">
             <motion.button className="flex pb-3">
@@ -163,23 +169,23 @@ const Services = () => {
           whileTap={{ scale: 0.95 }}
           className="border-2 border-[#C9C6C6] rounded-md shadow-md"
         >
-          <motion.div className="flex">
-            <span>
+          <motion.div className="flex h-20">
+            <span className="p-2 mt-2">
               <Image
                 src="/assets/service-icons/carrier.svg"
-                className="w-auto m-2"
+                className="w-auto "
                 width={350}
                 height={350}
                 alt="brands"
               />
             </span>
-            <h2 className="text-lg font-semibold mt-3 ml-3 w-2/3">
+            <h2 className="text-lg m w-fit font-semibold mt-3">
               Carrier and Infastructure Projects
             </h2>
           </motion.div>
-          <p className="px-3 py-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna
+          <p className="px-3 py-5 sm:h-44">
+            Network infrastructure services, covering installation,
+            commissioning, monitoring, and disaster recovery.
           </p>
           <Link href="/service#carrier">
             <motion.button className="flex pb-3">

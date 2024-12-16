@@ -17,9 +17,10 @@ const MarqueeBrand = () => {
   ];
   return (
     <div className="mt-20 w-5/6 mx-auto md:mt-0 md:py-32 md:w-full">
-      <h1 className="text-center font-bold text-2xl ">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,{" "}
+      <h1 className="text-center font-bold text-2xl sm:text-3xl ">
+        Services Installed And Commissioned for Our Partner's Clients
       </h1>
+
       <div className="mt-5 p-7">
         <Marquee gradient={true}>
           {brandNames.map((brand, index) => (

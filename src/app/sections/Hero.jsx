@@ -51,20 +51,21 @@ const Hero = () => {
             <motion.div className="mt-10 w-5/6  mx-auto md:mt-20">
               <motion.h1
                 variants={contentVariant}
-                className="md:text-white font-bold text-3xl text-center md:text-left md:text-2xl md:w-80 md:ml-20"
+                className="md:text-white font-bold text-3xl text-center md:text-left md:text-4xl md:w-4/5 md:ml-20"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                Empowering Connections with Trusted Telecom Solutions
+                {/* Empowering Connections with Trusted Telecom Solutions (3/4)*/}
               </motion.h1>
               <motion.p
                 variants={contentVariant}
-                className="text-md text-center mt-10 w-fit md:text-[#F5F5F5] md:w-80 md:ml-20 md:text-left"
+                className="text-md text-center mt-8 w-fit md:text-[#F5F5F5] md:w-2/3 md:ml-20 md:text-left"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis
+                Rising leader in the telecommunications and communications
+                industry, recognized as a reliable and exceptional partner for
+                major carriers and providers.
               </motion.p>
               {/* Buttons */}
-              <motion.div className="mt-14 w-fit flex mx-auto md:mt-20 md:mx-0">
+              <motion.div className="mt-14 w-fit flex mx-auto md:mt-15 md:pb-3 md:mx-0">
                 {/* Services */}
                 <Link href="/service">
                   <motion.button
