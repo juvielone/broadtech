@@ -38,7 +38,7 @@ const About = () => {
           <div>
             <Image
               src="/assets/images/about-tower.jpg"
-              className=" rounded-lg mx-auto mt-12 w-64 md:w-80 md:mt-0 lg:mt-0 lg:h-5/6 lg:w-3/4"
+              className=" rounded-lg mx-auto mt-12 w-64 md:w-80 md:mt-0 lg:mt-0 lg:h-5/6 lg:w-[70%]"
               width={470}
               height={350}
               alt="brands"
