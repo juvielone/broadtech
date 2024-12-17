@@ -40,7 +40,7 @@ const Navbar = () => {
           <motion.div className="flex-shrink-0">
             <Link href="/">
               <Image
-                src="/assets/images/logo.svg"
+                src="/assets/images/logox.svg"
                 className="h-[4.5rem] md:h-20 w-auto"
                 width={400}
                 height={400}

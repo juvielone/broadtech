@@ -27,13 +27,13 @@ const About = () => {
       <motion.div>
         <motion.h1
           variants={contentVariant}
-          className="w-fit mx-auto py-3 font-bold text-2xl  md:mx-0"
+          className="w-11/12 text-center md:text-left md:w-fit mx-auto py-3 font-bold text-2xl md:mx-0"
         >
           Your Trusted Partner in Telecommunications Excellence
         </motion.h1>
         <motion.p
           variants={contentVariant}
-          className="py-5 w-96 mx-auto text-center md:mt-5 md:w-auto md:text-left"
+          className="w-96 mx-auto text-center md:mt-5 md:w-auto md:text-left"
         >
           A rising leader in telecommunications, we are a trusted partner for
           major carriers and providers, backed by over 25 years of expertise in
