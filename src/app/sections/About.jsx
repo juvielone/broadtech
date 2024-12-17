@@ -29,17 +29,20 @@ const About = () => {
           variants={contentVariant}
           className="w-fit mx-auto py-3 font-bold text-2xl  md:mx-0"
         >
-          Lorem ipsum dolor sit amet
+          Your Trusted Partner in Telecommunications Excellence
         </motion.h1>
         <motion.p
           variants={contentVariant}
           className="py-5 w-96 mx-auto text-center md:mt-5 md:w-auto md:text-left"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis"Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqvua. Ut enim ad minim veniam, quis
+          A rising leader in telecommunications, we are a trusted partner for
+          major carriers and providers, backed by over 25 years of expertise in
+          copper, fiber optics, and wireless technologies. Our reputation for
+          quality, customer focus, and technical excellence is supported by
+          strategic alliances with leading training providers and access to
+          advanced testing equipment. As a subcontractor for key projects like
+          the NBN rollout and a long-standing partner of VisionStream/Telstra,
+          we deliver innovative and reliable solutions that exceed expectations.
         </motion.p>
         <motion.div className="flex w-fit mx-auto md:mx-0 md:mt-10">
           <motion.div className="px-3 font-medium">See More</motion.div>
