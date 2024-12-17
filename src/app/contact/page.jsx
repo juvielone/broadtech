@@ -13,7 +13,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 pt-5 sm:pt-20 md:grid-cols-2 ">
           {/* Form */}
           <div className="">
-            <div className="flex">
+            <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Email */}
               <div className="flex ml-5">
                 <span>
@@ -33,7 +33,7 @@ const Contact = () => {
                 </h2>
               </div>
               {/* Phone */}
-              <div className="flex ml-5">
+              <div className="flex ml-5 md:ml-8">
                 <span>
                   <svg
                     width="35px"
@@ -81,7 +81,7 @@ const Contact = () => {
                   id="subject"
                   name="emaisubject"
                   type="text"
-                  placeholder="Email"
+                  placeholder="Subject"
                   className=" min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
                 />
               </div>
